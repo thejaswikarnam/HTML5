@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style>
+		h1:after {
+    		content: url(download.jpeg);
+ 		}
+		div {
+    			padding: 5px;
+		}
+		.center {
+			text-align: center;
+		}
+		form { 
+			margin: 10% auto; 
+			width:250px;
+		}
+		input:invalid{
+  		background-color:#ffdddd;
+		}
+	</style>
+<title>Xena Events</title>
+</head>
+<body>
+	<h1 class="center"> Xena Events</h1>
+<div>
+	<form>
+		Name:<br>      <input type="text" name="name" placeholder="Name" pattern="[A-Za-z]+" required> <br>
+		Age:<br>       <input type="number" name= "age" placeholder="Age" min="18" required> <br>
+		Email ID:<br>  <input type="text" name="email"  placeholder="Email ID" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required> <br>
+		City:<br>      <input type="text" name="city" list="cities" placeholder="City" required>
+				<datalist id="cities">
+					<option value="Delhi">
+					<option value="Kochi">
+					<option value="Bangalore">
+					<option value="Hyderabad">
+				</datalist>
+		<br> <br>
+		<button type="button" onclick="alert('If any filed is red then its invalid input !!!!')">Submit</button> <br>
+	</form>
+</div>
+		
+</body>
+
+</html>

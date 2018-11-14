@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style>
+		h1:after {
+    		content: url(di.jpg);
+ 		}
+		div {
+			margin: 8% auto;
+		}
+		section {
+    			padding: 5px;
+		}
+		.center {
+			text-align: center;
+		}
+		.middle {
+			margin-left: 30%; 
+		}
+	</style>
+<title>Awesome Videos</title>
+</head>
+<body>
+
+<div>
+<section>
+	<h1 class="center"> Awesome Online Videos </h1>
+</section>
+
+<section class="middle">
+	<video id="video1" width="640" height="480" controls>
+  	<source src="filename.mp4" type="video/mp4">
+  	<source src="alternative.ogg" type="video/ogg">
+  	Your browser does not support the video tag.
+	</video> <br>
+	<button onclick="play()">Play</button> 
+  	<button onclick="pause()">Pause</button>
+</section>
+</div>
+
+<script> 
+	var myVideo = document.getElementById("video1");
+
+	function play() { 
+     	   myVideo.play();
+	} 
+    	function pause() {
+     	   myVideo.pause();
+	} 
+</script>
+		
+</body>
+
+</html>
